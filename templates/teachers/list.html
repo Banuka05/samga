@@ -32,25 +32,17 @@
 									<p>{{ t.details }}</p>
 								</div>								
 								<div class="col-md-4">
-									{% if t.photo.url == "/ media /images/woman1.jpg" %}
+									{% if t.id == 1 %}
 										<img style="width:100%; max-width:400px;padding:10px;" src="{% static 'images/woman1.jpg' %}" alt="{{ t.fio }}" title="{{ t.details }}">    
-									{% elif t.photo.url == "/ media /images/woman2.jpg" %}
+									{% elif t.id == 2 %}
 										<img style="width:100%; max-width:400px;padding:10px;" src="{% static 'images/woman2.jpg' %}" alt="{{ t.fio }}" title="{{ t.details }}">    
-									{% elif t.photo.url == "/ media /images/woman3.jpg" %}
-										<img style="width:100%; max-width:400px;padding:10px;" src="{% static 'images/woman3.jpg' %}" alt="{{ t.fio }}" title="{{ t.details }}">    
-									{% elif t.photo.url == "/ media /images/woman4.jpg" %}
-										<img style="width:100%; max-width:400px;padding:10px;" src="{% static 'images/woman4.jpg' %}" alt="{{ t.fio }}" title="{{ t.details }}">    
-									{% elif t.photo.url == "/ media /images/woman5.jpg" %}
-										<img style="width:100%; max-width:400px;padding:10px;" src="{% static 'images/woman5.jpg' %}" alt="{{ t.fio }}" title="{{ t.details }}">    
-									{% elif t.photo.url == "/ media /images/woman6.jpg" %}
-										<img style="width:100%; max-width:400px;padding:10px;" src="{% static 'images/woman6.jpg' %}" alt="{{ t.fio }}" title="{{ t.details }}">    
-									{% elif t.photo.url == "/ media /images/woman7.jpg" %}
-										<img style="width:100%; max-width:400px;padding:10px;" src="{% static 'images/woman7.jpg' %}" alt="{{ t.fio }}" title="{{ t.details }}">    
-									{% elif t.photo.url == "/ media /images/male1.jpg" %}
+									{% elif t.id == 3 %}
 										<img style="width:100%; max-width:400px;padding:10px;" src="{% static 'images/male1.jpg' %}" alt="{{ t.fio }}" title="{{ t.details }}">    
-									{% elif t.photo.url == "/ media /images/male2.jpg" %}
+									{% elif t.id == 4 %}
 										<img style="width:100%; max-width:400px;padding:10px;" src="{% static 'images/male2.jpg' %}" alt="{{ t.fio }}" title="{{ t.details }}">    
-									{% elif t.photo.url == "/ media /images/male3.jpg" %}
+									{% elif t.id == 5 %}
+										<img style="width:100%; max-width:400px;padding:10px;" src="{% static 'images/woman3.jpg' %}" alt="{{ t.fio }}" title="{{ t.details }}">    
+									{% elif t.id == 6 %}
 										<img style="width:100%; max-width:400px;padding:10px;" src="{% static 'images/male3.jpg' %}" alt="{{ t.fio }}" title="{{ t.details }}">    
 									{% else %}
 										{% if t.photo.url != None %}

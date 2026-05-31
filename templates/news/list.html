@@ -31,29 +31,29 @@
 									<p>{{ n.details }}</p>
 								</div>								
 								<div class="col-md-4">
-									{% if n.photo.url == "/ media /images/news1.jpeg" %}
-										<img style="width:100%; max-width:400px;" src="{% static 'images/news1.jpeg' %}" alt="{{ n.photo.url }}" title="{{ n.details }}">    
-									{% elif n.photo.url == "/ media /images/news2.jpeg" %}
-										<img style="width:100%; max-width:400px;" src="{% static 'images/news2.jpeg' %}" alt="{{ n.photo.url }}" title="{{ n.details }}">    
-									{% elif n.photo.url == "/ media /images/news3.jpeg" %}
-										<img style="width:100%; max-width:400px;" src="{% static 'images/news3.jpeg' %}" alt="{{ n.photo.url }}" title="{{ n.details }}">    
-									{% elif n.photo.url == "/ media /images/news4.jpeg" %}
-										<img style="width:100%; max-width:400px;" src="{% static 'images/news4.jpeg' %}" alt="{{ n.photo.url }}" title="{{ n.details }}">    
-									{% elif n.photo.url == "/ media /images/news5.jpeg" %}
-										<img style="width:100%; max-width:400px;" src="{% static 'images/news5.jpeg' %}" alt="{{ n.photo.url }}" title="{{ n.details }}">    
-									{% elif n.photo.url == "/ media /images/news6.jpeg" %}
-										<img style="width:100%; max-width:400px;" src="{% static 'images/news6.jpeg' %}" alt="{{ n.photo.url }}" title="{{ n.details }}">    
-									{% elif n.photo.url == "/ media /images/news7.jpeg" %}
-										<img style="width:100%; max-width:400px;" src="{% static 'images/news7.jpeg' %}" alt="{{ n.photo.url }}" title="{{ n.details }}">    
-									{% elif news.photo.url == "/ media /images/news8.jpeg" %}
-										<img style="width:100%; max-width:400px;" src="{% static 'images/news8.jpeg' %}" alt="{{ n.photo.url }}" title="{{ news.details }}">    
-									{% elif news.photo.url == "/ media /images/news9.jpeg" %}
-										<img style="width:100%; max-width:400px;" src="{% static 'images/news9.jpeg' %}" alt="{{ n.photo.url }}" title="{{ news.details }}">    
-									{% elif news.photo.url == "/ media /images/news10.jpeg" %}
-										<img style="width:100%; max-width:400px;" src="{% static 'images/news10.jpeg' %}" alt="{{ n.photo.url }}" title="{{ news.details }}">    
+									{% if n.id == 1 %}
+										<img style="width:100%; max-width:400px;" src="{% static 'images/news1.jpg' %}" alt="{{ n.photo.url }}">
+									{% elif n.id == 2 %}
+										<img style="width:100%; max-width:400px;" src="{% static 'images/news2.jpg' %}" alt="{{ n.photo.url }}">
+									{% elif n.id == 3 %}
+										<img style="width:100%; max-width:400px;" src="{% static 'images/news3.jpg' %}" alt="{{ n.photo.url }}">
+									{% elif n.id == 4 %}
+										<img style="width:100%; max-width:400px;" src="{% static 'images/news4.jpg' %}" alt="{{ n.photo.url }}">
+									{% elif n.id == 5 %}
+										<img style="width:100%; max-width:400px;" src="{% static 'images/news5.jpg' %}" alt="{{ n.photo.url }}">
+									{% elif n.id == 6 %}
+										<img style="width:100%; max-width:400px;" src="{% static 'images/news6.jpg' %}" alt="{{ n.photo.url }}">
+									{% elif n.id == 7 %}
+										<img style="width:100%; max-width:400px;" src="{% static 'images/news7.jpg' %}" alt="{{ n.photo.url }}">
+									{% elif n.id == 8 %}
+										<img style="width:100%; max-width:400px;" src="{% static 'images/news8.jpg' %}" alt="{{ n.photo.url }}">
+									{% elif n.id == 9 %}
+										<img style="width:100%; max-width:400px;" src="{% static 'images/news9.jpg' %}" alt="{{ n.photo.url }}">
+									{% elif n.id == 10 %}
+										<img style="width:100%; max-width:400px;" src="{% static 'images/news10.jpg' %}" alt="{{ n.photo.url }}">
 									{% else %}
 										{% if n.photo.url != None %}
-											<img style="width:100%; max-width:400px;" src="{{ n.photo.url}}" alt="{{ n.photo.url }}" title="{{ n.details }}">
+											<img style="width:100%; max-width:400px;" src="{{ n.photo.url}}" alt="{{ n.photo.url }}">
 										{% endif %}
 									{% endif %}
 								</div>
