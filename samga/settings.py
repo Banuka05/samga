@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-6aqu8h+-u))26sf4*8-v0!rmbb=sswtls$up4d=h5$5m!*8jp8
 DEBUG = False
 #DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'samga-y849.onrender.com',]
+ALLOWED_HOSTS = ['127.0.0.1', 'samga-v345.onrender.com',]
 
 # Application definition
 
@@ -92,19 +92,19 @@ WSGI_APPLICATION = 'samga.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #    'ENGINE': 'django.db.backends.sqlite3',
-    #    'NAME': BASE_DIR / 'db.sqlite3',
-    # }
-
     'default': {
-       'ENGINE': 'django.db.backends.postgresql_psycopg2',
-       'NAME': 'samga',
-       'USER' : 'customer',
-       'PASSWORD' : 'customer',
-       'HOST' : '127.0.0.1',
-       'PORT' : '5432',
-    }    
+       'ENGINE': 'django.db.backends.sqlite3',
+       'NAME': BASE_DIR / 'db.sqlite3',
+    }
+
+    # 'default': {
+    #    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #    'NAME': 'samga',
+    #    'USER' : 'customer',
+    #    'PASSWORD' : 'customer',
+    #    'HOST' : '127.0.0.1',
+    #    'PORT' : '5432',
+    # }    
 
     # 'default': {
 	   #  'ENGINE': 'django.db.backends.postgresql_psycopg2',
